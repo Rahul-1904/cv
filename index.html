@@ -1,0 +1,76 @@
+<html>
+    <head>
+       <title>home</title>
+       <link rel="stylesheet" href="/css/index.css">
+    </head>
+    <body>
+        <header>
+            <div id="title">
+                <h1>Home ❤</h1>
+            </div>
+           <div id="lists">
+            <ul>
+                <a href="./about.html">about</a>
+                <a href="./contact.html">contact</a>
+                <a href="./content.html">content</a>
+            </ul>
+            
+           </div>
+        
+        </header>
+        <section id="sign-in-form">
+           <div id="heading">
+             <div id="head" class="boxshadow">
+                 <h1>
+                     sign-in
+                 </h1>
+             </div>
+             <div id="signup" class="boxshadow">
+                <h1>
+                    sign-up
+                </h1>
+            </div>
+           </div>
+             <div id="form">
+                 <form action="/api/login" method="POST" id="loginform">
+                     <label for="name"> username:</label>
+                     <input type="text" name="name" id="name" placeholder="username" required><br>
+                     <label for="password"> password:</label>
+                     <input type="password" name="password" id="password" placeholder="password" required><br>
+                  
+                     <input type="checkbox"  id="checkbox"  required>
+                     <label for="checkbox"> remember me</label><br>
+                     <input type="submit" value="submission">
+                     <input type="reset" value="reset">
+
+                 </form>
+             </div>
+             <div id="signupform">
+                 <form action="/api/signup" method="POST" id="signupsection">
+                    <label for="username">username: </label><br>
+                     <input type="text" name="name" placeholder="username" id="username" required><br>
+                     <label for="password1">your-password: </label> <br>
+                     <input type="password" name="your-password" id="password1" placeholder="your-password" required> <br>
+                     <label for="password2"> confirm-password: </label> <br>
+                     <input type="password" name="your-password" id="password2" placeholder="confirm-password" required> <br>
+                     <input type="submit" value="sign-up">
+                     <input type="reset" value="reset">              
+                </form>
+             </div>
+             <div id="logoutsection">
+                 <p>wants to log out?</p>
+                 <button id="logoutbutton">log-out</button>
+             </div>
+        </section>
+        <footer > 
+            
+            <button id="togglebutton">Hide</button>
+            <div id="footer">
+                <p>this is my first site in which i m working on</p>
+            </div>
+           
+        </footer>
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
